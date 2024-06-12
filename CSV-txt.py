@@ -1,7 +1,7 @@
 import numpy as np
 
-dataLocation = 'LidDrivenEX4/2order-residuals'
-dataName = '2order-residuals.csv'
+dataLocation = 'LidDrivenEX4/Energy'
+dataName = 'KE.csv'
 
 # Load the data
 collumnNames = np.loadtxt(dataLocation + '/' + dataName, delimiter=',', max_rows=1, dtype=str)
