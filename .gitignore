@@ -1,3 +1,8 @@
+PipeBend_10_vv.sim
+PipeBend_10_vv.sim~ 
+PipeBend_base25.sim
+PipeBend_base25.sim~
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
