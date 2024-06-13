@@ -1,7 +1,7 @@
 import numpy as np
 
-dataLocation = 'ResPlotEx3'
-dataName = 'resAMR.csv'
+dataLocation = 'LidDrivenEX4/Energy'
+dataName = 'KE.csv'
 
 # Load the data
 collumnNames = np.loadtxt(dataLocation + '/' + dataName, delimiter=',', max_rows=1, dtype=str)
