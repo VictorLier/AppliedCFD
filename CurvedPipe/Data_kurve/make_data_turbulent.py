@@ -23,7 +23,7 @@ for file in files:
     u = u[indices]
     
     # Normalize the data by subtracting the median value:
-    r -= np.median(r)
+    r -= r[0]+D/2
     r /= D/2 
 
     np.savetxt(os.path.join(txt_path, f'{name}_norm.txt'), np.array([r, u]).T, delimiter=' ')
