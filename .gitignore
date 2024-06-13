@@ -1,5 +1,5 @@
-.sim
-.sim~
+*.sim
+*.sim~
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
