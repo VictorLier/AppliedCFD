@@ -8,7 +8,7 @@ txt_path = "CurvedPipe\Data_kurve"
 
 files = os.listdir(data_path)
 files = [f for f in files if f.endswith('.csv')]
-files = ["base_2_5.csv"]
+files = ["base_2_5.csv", "base_5.csv", "base_10_vv.csv", "base.csv"]
 
 D = 0.104
 
@@ -23,7 +23,7 @@ for file in files:
     u = u[indices]
     
     # Normalize the data by subtracting the median value:
-    r -= np.median(r)
+    r -= r[0]+D/2
     r /= D/2 
 
     np.savetxt(os.path.join(txt_path, f'{name}_norm.txt'), np.array([r, u]).T, delimiter=' ')
@@ -36,4 +36,5 @@ for file in files:
         plt.grid()
         plt.xlabel('y/D')
         plt.ylabel('u')
-        plt.show()
+
+plt.show()
