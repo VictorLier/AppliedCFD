@@ -1,7 +1,7 @@
 import numpy as np
 
-dataLocation = 'LidDrivenEX4/Energy'
-dataName = 'KE.csv'
+dataLocation = 'CurvedPipe\Data_kurve\Data_kryds'
+dataName = 'Data_kryds.csv'
 
 # Load the data
 collumnNames = np.loadtxt(dataLocation + '/' + dataName, delimiter=',', max_rows=1, dtype=str)
