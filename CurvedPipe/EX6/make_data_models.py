@@ -8,7 +8,7 @@ txt_path = "CurvedPipe\EX6"
 
 files = os.listdir(data_path)
 files = [f for f in files if f.endswith('.csv')]
-files = ["base_2_5.csv", "base_5.csv", "base_10_vv.csv", "base.csv"]
+files = ["Velocity.csv", "Velocity_KOmega.csv", "Velocity_Spalart.csv"]
 
 D = 0.104
 

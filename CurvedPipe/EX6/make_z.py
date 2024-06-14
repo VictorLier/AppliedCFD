@@ -17,11 +17,11 @@ for file in files:
     data = np.genfromtxt(data_path + '/' + file, delimiter=',')
     name = str(file.split(".")[0])
     if name == "Pressure":
-        p_ref = 1.701001e-1
+        p_ref = 2.152536e-1
     elif name == "Pressure_KOmega":
-        p_ref = 1.439723e-1
+        p_ref = 1.898333e-1
     elif name == "Pressure_Spalart":
-        p_ref = 1.617134e-1
+        p_ref = 2.114314e-1
     else:
         p_ref = 0
     data = data[1:]
@@ -99,7 +99,7 @@ for file in files:
     l_outer = np.zeros_like(x_outer)
     l_inner = np.zeros_like(x_inner)
     
-    for i in range(len(x_outer)):
+    for i in range(1, len(x_outer)):
         for j in range(2, i):
             l_outer[i] += np.sqrt((x_outer[j] - x_outer[j-1])**2 + (z_outer[j] - z_outer[j-1])**2)
             l_inner[i] += np.sqrt((x_inner[j] - x_inner[j-1])**2 + (z_inner[j] - z_inner[j-1])**2)
