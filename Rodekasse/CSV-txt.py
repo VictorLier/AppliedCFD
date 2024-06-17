@@ -1,7 +1,7 @@
 import numpy as np
 
-dataLocation = 'CurvedPipe\Data_kurve\Data_kryds'
-dataName = 'inner_cross.csv'
+dataLocation = 'Aircraft\EX7\Residuals'
+dataName = 'ResidualsEX7.csv'
 
 # Load the data
 collumnNames = np.loadtxt(dataLocation + '/' + dataName, delimiter=',', max_rows=1, dtype=str)
