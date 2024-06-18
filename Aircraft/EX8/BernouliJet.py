@@ -27,6 +27,15 @@ rho_nozzle = mass_flow / (A_nozzle * U_nozzle)
 
 T_nozzle = p_inf / (rho_nozzle * R_gas)
 
-print("The exit velocity is", U_nozzle, "m/s")
-print("The exit density is", rho_nozzle, "kg/m^3")
-print("The exit temperature is", T_nozzle, "K")
+print("The pressure in the engine is", round(p_engine, 2), "Pa")
+
+print("\n")
+
+print("The exit velocity is", round(U_nozzle, 2), "m/s")
+print("The exit density is", round(rho_nozzle, 2), "kg/m^3")
+print("The exit temperature is", round(T_nozzle, 2), "K")
+
+print("\n")
+
+print("The area of the manifold is", round(A_manifold, 5), "m^2")
+print("The area of the engine is", round(A_engine, 5), "m^2")
